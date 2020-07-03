@@ -3,7 +3,7 @@ spring:
     active: dev
 ---
 server:
-  port: 7001
+  port: 7002
 spring:
   profiles: dev
   application: 
@@ -11,7 +11,7 @@ spring:
   #Eureka
 eureka:
   instance:
-    hostname: eureka7001.com #服务器实例名称
+    hostname: eureka7002.com #服务器实例名称
   client:
     register-with-eureka: false #表示是否向eureka注册中心注册自己
     fetch-registry: false   #为false代表自己就是注册中心
@@ -19,7 +19,7 @@ eureka:
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 ---
 server:
-  port: 7001
+  port: 7002
 spring:
   profiles: test
   application: 
@@ -27,7 +27,7 @@ spring:
   #Eureka
 eureka:
   instance:
-    hostname: eureka7001.com #服务器实例名称
+    hostname: eureka7002.com #服务器实例名称
   client:
     register-with-eureka: false #表示是否向eureka注册中心注册自己
     fetch-registry: false   #为false代表自己就是注册中心
